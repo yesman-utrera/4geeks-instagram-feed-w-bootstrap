@@ -44,14 +44,16 @@
 
 <!-- SECOND NAVBAR -->
     <ul class="nav nav-pills d-flex justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link" id="primera-vista-tab" data-toggle="pill" href="#primera-vista" role="tab" 
-              aria-controls="primera-vista" aria-selected="true"><i class="fas fa-square"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="segunda-vista-tab" data-toggle="pill" href="#segunda-vista" role="tab" 
-              aria-controls="segunda-vista" aria-selected="true"><i class="fas fa-th"></i></a>
-            </li>
+        <!-- <li class="nav-item active"><a class="nav-link" data-toggle="tab" href="#primera-vista"><i class="fas fa-square"></i></a></li>
+        <li class="nav-item active"><a class="nav-link" data-toggle="tab" href="#segunda-vista"><i class="fas fa-th"></i></a></li> -->
+        <li class="nav-item">
+            <a class="nav-link" id="primera-vista-tab" data-toggle="pill" href="#primera-vista" role="tab" 
+            aria-controls="primera-vista" aria-selected="true"><i class="fas fa-square"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="segunda-vista-tab" data-toggle="pill" href="#segunda-vista" role="tab" 
+            aria-controls="segunda-vista" aria-selected="true"><i class="fas fa-th"></i></a>
+        </li>
     </ul>
 
 <!-- Cards first view -->
@@ -64,13 +66,14 @@
                     <h6 class="card-subtitle mb-2 text-muted text-right">DATE</h6>
                 </div>
             
-            <div class="card-body">
-              <img src="https://picsum.photos/200/200" class="card-img-top" alt="">
-              <p><b>23 likes</b></p>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link"><i class= "far fa-heart"></i></a>
-              <a href="#" class="card-link"><i class= "far fa-comment"></i></a>
-              <a href="#" class="card-link"><i class= "far fa-paper-plane"></i></a>
+                <div class="card-body">
+                <img src="https://picsum.photos/200/200" class="card-img-top" alt="">
+                <p><b>23 likes</b></p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link"><i class= "far fa-heart"></i></a>
+                <a href="#" class="card-link"><i class= "far fa-comment"></i></a>
+                <a href="#" class="card-link"><i class= "far fa-paper-plane"></i></a>
+                </div>
             </div>
 
             <div class="card" style="width: 30rem;">
@@ -79,13 +82,14 @@
                     <h6 class="card-subtitle mb-2 text-muted text-right">DATE</h6>
                 </div>
             
-            <div class="card-body">
-              <img src="https://picsum.photos/id/134/200/200" class="card-img-top" alt="">
-              <p><b>85 likes</b></p>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, beatae.</p>
-              <a href="#" class="card-link"><i class= "far fa-heart"></i></a>
-              <a href="#" class="card-link"><i class= "far fa-comment"></i></a>
-              <a href="#" class="card-link"><i class= "far fa-paper-plane"></i></a>
+                <div class="card-body">
+                <img src="https://picsum.photos/id/134/200/200" class="card-img-top" alt="">
+                <p><b>85 likes</b></p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, beatae.</p>
+                <a href="#" class="card-link"><i class= "far fa-heart"></i></a>
+                <a href="#" class="card-link"><i class= "far fa-comment"></i></a>
+                <a href="#" class="card-link"><i class= "far fa-paper-plane"></i></a>
+                </div>
             </div>
 
             <div class="card" style="width: 30rem;">
@@ -94,33 +98,24 @@
                     <h6 class="card-subtitle mb-2 text-muted text-right">DATE</h6>
                 </div>
             
-            <div class="card-body">
-              <img src="https://picsum.photos/id/235/200/200" class="card-img-top" alt="">
-              <p><b>85 likes</b></p>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, beatae.</p>
-              <a href="#" class="card-link"><i class= "far fa-heart"></i></a>
-              <a href="#" class="card-link"><i class= "far fa-comment"></i></a>
-              <a href="#" class="card-link"><i class= "far fa-paper-plane"></i></a>
+                <div class="card-body">
+                <img src="https://picsum.photos/id/235/200/200" class="card-img-top" alt="">
+                <p><b>85 likes</b></p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, beatae.</p>
+                <a href="#" class="card-link"><i class= "far fa-heart"></i></a>
+                <a href="#" class="card-link"><i class= "far fa-comment"></i></a>
+                <a href="#" class="card-link"><i class= "far fa-paper-plane"></i></a>
+                </div>
             </div>
-
         </div>
     </div>
 
     <!-- CARDS Second View -->
+ <div id="segunda-vista" class="tab-pane fade">
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
 
-    <div class="tab-pane fade" id="segunda-vista" role="tabpanel" aria-labelledby="pills-profile-tab">
-            <div class="card-group">
-              <div class="card">
-                    <div class="card-header">
-                        My first photo
-                    </div>
-                    <div class="card-body">
-                    <img src="https://picsum.photos/200/300" class="card-img-top" alt="">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-              </div>
-            </div>
-    </div> 
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
