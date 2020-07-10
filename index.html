@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+
+    <title>Instagram</title>
+</head>
+<body>
+
+<!-- FIRST NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <a class="navbar-brand" href="#"><i class="fab fa-instagram d-inline-block align-top px-2 icon_instagram" style="font-size: 50px;"></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#" style="font-family:Galada; font-size:30px;">Instagram<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Create new post</button>
+        <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-cog"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- SECOND NAVBAR -->
+    <ul class="nav nav-pills d-flex justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" id="primera-vista-tab" data-toggle="pill" href="#primera-vista" role="tab" 
+              aria-controls="primera-vista" aria-selected="true"><i class="fas fa-square"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="segunda-vista-tab" data-toggle="pill" href="#segunda-vista" role="tab" 
+              aria-controls="segunda-vista" aria-selected="true"><i class="fas fa-th"></i></a>
+            </li>
+    </ul>
+
+<!-- Cards first view -->
+
+<div class="d-flex justify-content-center w-100 mt-3 bg-light">
+        <div class="tab-pane fade show active" id="primera-vista">
+            <div class="card" style="width: 30rem;">
+                <div class="card-header">
+                    <h5 class="card-title">My first photo</h5>
+                    <h6 class="card-subtitle mb-2 text-muted text-right">DATE</h6>
+                </div>
+            
+            <div class="card-body">
+              <img src="https://picsum.photos/200/200" class="card-img-top" alt="">
+              <p><b>23 likes</b></p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link"><i class= "far fa-heart"></i></a>
+              <a href="#" class="card-link"><i class= "far fa-comment"></i></a>
+              <a href="#" class="card-link"><i class= "far fa-paper-plane"></i></a>
+            </div>
+
+            <div class="card" style="width: 30rem;">
+                <div class="card-header">
+                    <h5 class="card-title">My second photo</h5> 
+                    <h6 class="card-subtitle mb-2 text-muted text-right">DATE</h6>
+                </div>
+            
+            <div class="card-body">
+              <img src="https://picsum.photos/id/134/200/200" class="card-img-top" alt="">
+              <p><b>85 likes</b></p>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, beatae.</p>
+              <a href="#" class="card-link"><i class= "far fa-heart"></i></a>
+              <a href="#" class="card-link"><i class= "far fa-comment"></i></a>
+              <a href="#" class="card-link"><i class= "far fa-paper-plane"></i></a>
+            </div>
+
+            <div class="card" style="width: 30rem;">
+                <div class="card-header">
+                    <h5 class="card-title">My second photo</h5> 
+                    <h6 class="card-subtitle mb-2 text-muted text-right">DATE</h6>
+                </div>
+            
+            <div class="card-body">
+              <img src="https://picsum.photos/id/235/200/200" class="card-img-top" alt="">
+              <p><b>85 likes</b></p>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, beatae.</p>
+              <a href="#" class="card-link"><i class= "far fa-heart"></i></a>
+              <a href="#" class="card-link"><i class= "far fa-comment"></i></a>
+              <a href="#" class="card-link"><i class= "far fa-paper-plane"></i></a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- CARDS Second View -->
+
+    <div class="tab-pane fade" id="segunda-vista" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="card-group">
+              <div class="card">
+                    <div class="card-header">
+                        My first photo
+                    </div>
+                    <div class="card-body">
+                    <img src="https://picsum.photos/200/300" class="card-img-top" alt="">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+              </div>
+            </div>
+    </div> 
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> 
+</body>
+</html>
