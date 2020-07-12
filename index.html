@@ -1,69 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
-    <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+ <html lang="en"><head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Instagram Feed</title>
 
-    <title>Instagram</title>
-</head>
-<body>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+     <script src="https://kit.fontawesome.com/2fd3d964b0.js" crossorigin="anonymous"></script>
+     <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+ </head>
+ 
+ <body>
 
-<!-- FIRST NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <a class="navbar-brand" href="#"><i class="fab fa-instagram d-inline-block align-top px-2 icon_instagram" style="font-size: 50px;"></i></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#" style="font-family:Galada; font-size:30px;">Instagram<span class="sr-only">(current)</span></a>
-            </li>
-        </ul>
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Create new post</button>
-        <div class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-cog"></i>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+     <!-- First Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#"><i class="fab fa-instagram d-inline-block align-top px-2 icon_instagram" style="font-size: 50px;"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" style="font-family:Galada; font-size:40px;">Instagram<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <button href="#" class="btn btn-success mx-3" data-toggle="modal" data-target="#create-content">
+                Create new post
+            </button>
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-cog"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<!-- SECOND NAVBAR -->
-    <ul class="nav nav-pills d-flex justify-content-center">
-        <!-- <li class="nav-item active"><a class="nav-link" data-toggle="tab" href="#primera-vista"><i class="fas fa-square"></i></a></li>
-        <li class="nav-item active"><a class="nav-link" data-toggle="tab" href="#segunda-vista"><i class="fas fa-th"></i></a></li> -->
-        <li class="nav-item">
-            <a class="nav-link" id="primera-vista-tab" data-toggle="pill" href="#primera-vista" role="tab" 
-            aria-controls="primera-vista" aria-selected="true"><i class="fas fa-square"></i></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="segunda-vista-tab" data-toggle="pill" href="#segunda-vista" role="tab" 
-            aria-controls="segunda-vista" aria-selected="true"><i class="fas fa-th"></i></a>
-        </li>
-    </ul>
+     <!--Second Navbar-->
+         <div class="d-flex justify-content-center w-100 mt-3">
+             <ul class="nav nav-pills">
+                 <li class="nav-item">
+                     <a class="nav-link active" id="primera-vista-tab" data-toggle="pill" href="#primera-vista" role="tab" aria-controls="primera-vista" aria-selected="true">
+                         <i class="fas fa-square"></i>
+                     </a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" id="segunda-vista-tab" data-toggle="pill" href="#segunda-vista" role="tab" aria-controls="segunda-vista" aria-selected="true">
+                         <i class="fas fa-th"></i>
+                     </a>
+                 </li>
+             </ul>
+         </div>
 
-<!-- Cards first view -->
+<!-- MODAL for create new post button -->
 
-<div class="d-flex justify-content-center w-100 mt-3 bg-light">
-        <div class="tab-pane fade show active" id="primera-vista">
+<div class="modal fade" id="create-content" tabindex="-1" role="dialog" aria-labelledby="create-content"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <i class="fas fa-camera"></i>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Publish</button>
+                </div>
+            </div>
+        </div>
+  </div>
+
+     <!-- First view -->
+     <div class="d-flex justify-content-center  mt-3 tab-content" id="pills-tabContent">
+         <div class="tab-pane fade show active" id="primera-vista">
+
             <div class="card" style="width: 30rem;">
                 <div class="card-header">
                     <h5 class="card-title">My first photo</h5>
-                    <h6 class="card-subtitle mb-2 text-muted text-right">DATE</h6>
+                    <h6 class="card-subtitle mb-2 text-muted text-right">06/12</h6>
                 </div>
             
                 <div class="card-body">
@@ -78,14 +105,14 @@
 
             <div class="card" style="width: 30rem;">
                 <div class="card-header">
-                    <h5 class="card-title">My second photo</h5> 
-                    <h6 class="card-subtitle mb-2 text-muted text-right">DATE</h6>
+                    <h5 class="card-title">My second photo</h5>
+                    <h6 class="card-subtitle mb-2 text-muted text-right">12/12</h6>
                 </div>
             
                 <div class="card-body">
                 <img src="https://picsum.photos/id/134/200/200" class="card-img-top" alt="">
-                <p><b>85 likes</b></p>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, beatae.</p>
+                <p><b>82 likes</b></p>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, consequatur!.</p>
                 <a href="#" class="card-link"><i class= "far fa-heart"></i></a>
                 <a href="#" class="card-link"><i class= "far fa-comment"></i></a>
                 <a href="#" class="card-link"><i class= "far fa-paper-plane"></i></a>
@@ -94,32 +121,74 @@
 
             <div class="card" style="width: 30rem;">
                 <div class="card-header">
-                    <h5 class="card-title">My second photo</h5> 
-                    <h6 class="card-subtitle mb-2 text-muted text-right">DATE</h6>
+                    <h5 class="card-title">My third photo</h5>
+                    <h6 class="card-subtitle mb-2 text-muted text-right">09/12</h6>
                 </div>
             
                 <div class="card-body">
                 <img src="https://picsum.photos/id/235/200/200" class="card-img-top" alt="">
-                <p><b>85 likes</b></p>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, beatae.</p>
+                <p><b>23 likes</b></p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci velit vitae eius, et unde ipsam?</p>
                 <a href="#" class="card-link"><i class= "far fa-heart"></i></a>
                 <a href="#" class="card-link"><i class= "far fa-comment"></i></a>
                 <a href="#" class="card-link"><i class= "far fa-paper-plane"></i></a>
                 </div>
             </div>
+        </div>    
+ 
+<!--Second view -->
+        <div class="tab-pane fade" id="segunda-vista">
+    <div class="row row-cols-1 row-cols-md-3">
+        <div class="col mb-4">
+          <div class="card">
+            <img src="https://picsum.photos/200/200" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">First Photo</h5>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, nihil.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="https://picsum.photos/id/134/200/200" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Second Photo</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="https://picsum.photos/id/235/200/200" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Third photo</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="https://picsum.photos/id/535/200/200" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Fourth photo</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
         </div>
     </div>
-
-    <!-- CARDS Second View -->
- <div id="segunda-vista" class="tab-pane fade">
-      <h3>Menu 1</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
 
-
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> 
-</body>
+<!-- JS scripts -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+     </script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+     </script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+     </script>
+ </body>
 </html>
